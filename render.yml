@@ -1,0 +1,11 @@
+
+services:
+  - type: web
+    name: IA-Bot
+    env: node
+    repo: https://github.com/Crazynotdev/IA.git
+    branch: main
+    buildCommand: npm install
+    startCommand: node index.js
+    autoDeploy: true
+    plan: free
